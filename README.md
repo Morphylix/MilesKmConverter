@@ -1,3 +1,3 @@
 MilesKmConverter
 ===============================
-An app for converting miles to km and vice versa
+An app for converting %miles% to %km% and vice versa
