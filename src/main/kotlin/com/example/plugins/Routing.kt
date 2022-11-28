@@ -11,8 +11,9 @@ fun Application.configureRouting() {
 
     routing {
         get("/mtok") {
-            call.parameters[MILES]
-            call.respondText("Hello World!")
+            val miles = call.parameters[MILES]?.toInt()
+            val res = (miles ?: 0) * 1.6
+            call.respondText("$miles miles = $res km")
         }
 
         get("/ktom") {
