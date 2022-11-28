@@ -1,10 +1,8 @@
 package com.example.plugins
 
 import io.ktor.server.routing.*
-import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.response.*
-import io.ktor.server.request.*
 
 val MILES = "miles"
 
@@ -12,8 +10,9 @@ fun Application.configureRouting() {
 
     routing {
         get("/mtok") {
-            call.parameters[MILES]
-            call.respondText("Hello World!")
+            val miles = call.parameters[MILES]?.toInt()
+            val res = (miles ?: 0) * 1.6
+            call.respondText("$miles miles = $res km")
         }
     }
 }
