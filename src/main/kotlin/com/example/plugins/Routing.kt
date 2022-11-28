@@ -21,6 +21,12 @@ fun Application.configureRouting() {
             val res = (km ?: 0) / 1.6
             call.respondText("$km km = $res miles")
         }
+
+        get("/ktometers") {
+            val km = call.parameters[KM]?.toInt()
+            val res = (km ?: 0) * 1000
+            call.respondText("$km km = $res meters")
+        }
     }
 }
 
