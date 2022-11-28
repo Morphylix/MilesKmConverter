@@ -32,3 +32,7 @@ Run docker image:
 ``` console
 $ docker run -p 8080:8080 MilesToKmConverter
 ```
+=======
+MilesKmConverter
+===============================
+An app for converting *_miles_* to *_km_* and vice versa
