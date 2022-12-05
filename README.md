@@ -1,5 +1,8 @@
 # MilesToKmConverter
-
+(Master 
+[![Tests](https://github.com/Morphylix/MilesKmConverter/actions/workflows/gradle-tests.yml/badge.svg?branch=master)](https://github.com/Morphylix/MilesKmConverter/actions/workflows/gradle-tests.yml) )
+(Develop
+[![Tests](https://github.com/Morphylix/MilesKmConverter/actions/workflows/gradle-tests.yml/badge.svg?branch=develop)](https://github.com/Morphylix/MilesKmConverter/actions/workflows/gradle-tests.yml) )
 Converter that can convert miles to km, km to meters and vice versa.
 
 ## How to use
